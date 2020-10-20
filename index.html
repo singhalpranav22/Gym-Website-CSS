@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        
+        body{
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: url('img/bg.jpg');
+        }
+        .box1{
+            
+            display: inline-block;
+           
+            position: absolute;
+            left: 24px;
+            top: 20px;
+
+        }
+        .box1 img{
+            display: inline-block;
+            width: 82px;
+            margin: 14px;
+        
+        }
+        .box1 div{
+            text-align: center;
+            font-size: 17px;
+        }
+        .box2{
+           
+            display: block;
+            margin: 20px auto;
+            width: 46%;
+    font-size: 24px;
+        }
+        .box3{
+           
+            position: absolute;
+            display: inline-block;
+            right: 12px;
+            top: 50px;
+        }
+        .box3 button{
+            padding: 4px 14px;
+            background-color: black;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 21px;
+        }
+        .box3 button:hover{
+            background-color: rgb(75, 75, 75);
+        }
+
+        .nav{
+            display: inline-block;
+        }
+        .nav li{
+            display: inline-block;
+            padding: 6px;
+        }
+        .nav a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav a:hover,.nav a.active{
+            color: grey;
+            font-style: italic;
+        }
+        .container{
+            border: white 4px solid;
+    border-radius: 6px;
+    margin: 76px auto;
+    width: 64%;
+    padding: 46px;
+        }
+        .container form input{
+            display: block;
+            margin: 3px;
+            width: 60%;
+        }
+   .btn{
+    padding: 4px 14px;
+            background-color: black;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 17px;
+   }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="box1">
+        <img src="img/logo.png" alt="logo">
+        <div>Pranav's Gym</div>
+    </div>
+
+    <div class="box2">
+        <ul class="nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="box3">
+  <button class="btn">Call Us</button>
+  <button class="btn">Email Us</button>
+    </div>
+</header>
+<div class="container">
+    <h1 style="color:white;">Join the best Gym in Delhi-NCR</h1>
+<form action="backend.php" >
+     <input type="text" placeholder="Enter Name">
+    <input type="text" placeholder="Age">
+    <input type="text" placeholder="Phone No.">
+    <input type="text" placeholder="Address">
+   <button class="btn" type="submit">Submit Form</button>
+</form>
+</div>
+</body>
+</html>
